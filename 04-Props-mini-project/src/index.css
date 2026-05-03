@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+body {
+  background-color: #e2e0e0;
+  display: block;
+
+}
+
+.parent {
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.card {
+  width: 300px;
+  height: 360px;
+  background-color: #ffffff;
+  border: 2px solid #dadada;
+  border-radius: 30px;
+  padding: 30px;
+  margin: 40px;
+}
+
+.card .top {
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+
+}
+
+.card .top img {
+  width: 35px;
+  height: 35px;
+
+  border-radius: 50%;
+  border: 1px solid #dadada;
+  padding: 2px;
+}
+
+.top button {
+  display: flex;
+  padding: 4px 8px;
+  align-items: center;
+  border-radius: 5px;
+  border: 1px solid #dadada;
+  cursor: pointer;
+  font-size: 13px;
+  background-color: transparent;
+  color: #5c5b5b;
+  gap: 3px;
+}
+
+.card .center {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.center p span {
+  font-size: 10px;
+  color: #818181;
+}
+
+.center p {
+  font-size: 18px;
+  color: #000000;
+  font-weight: 500;
+}
+
+.center h3 {
+  font-size: 18px;
+  color: #000000;
+  font-weight: 700;
+}
+
+.center .tags {
+  display: flex;
+  gap: 10px;
+}
+
+.center .tags p {
+  font-size: 10px;
+  color: #3d3d3d;
+  border: 1px solid #ececec;
+  border-radius: 5px;
+  padding: 0px 5px;
+  align-items: center;
+  background-color: #eeeeee;
+  margin-top: 5px;
+}
+
+.card .bottom {
+  display: flex;
+  gap: 10px;
+  margin-top: 90px;
+  border-top: 1px solid #5c5b5b;
+  padding: 30px 0px;
+  justify-content: space-between;
+}
+
+.card .bottom h3 {
+  font-size: 15px;
+  color: #000000;
+
+}
+
+.card .bottom p {
+  font-size: 10px;
+  color: #5c5b5b;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.bottom button {
+  display: flex;
+  padding: 0px 15px;
+  align-items: center;
+  border-radius: 5px;
+  border: 1px solid #dadada;
+  cursor: pointer;
+  font-size: 10px;
+  background-color: black;
+  color: white;
+  align-items: center;
+}
