@@ -1,0 +1,123 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: 'Georgia', serif;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Hide the default header */
+.header {
+  display: none;
+}
+
+.container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* The big centered count number */
+.count {
+  font-size: 22vw;
+  font-weight: 300;
+  font-family: 'Georgia', serif;
+  color: #fff;
+  line-height: 1;
+  user-select: none;
+  /* Hollow/outline style like the screenshot */
+  -webkit-text-stroke: 6px #fff;
+  color: transparent;
+}
+
+/* Hide subtract button (screenshot only shows + on the right) */
+.sbtn {
+  position: fixed;
+ left: 28px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  background: transparent;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 300;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  transition: background 0.2s, color 0.2s;
+}
+
+/* The + button on the far right edge */
+.pbtn {
+  position: fixed;
+  right: 28px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  background: transparent;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 300;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  transition: background 0.2s, color 0.2s;
+}
+
+.pbtn:hover {
+  background: #fff;
+  color: #000;
+}
+
+/* Top icon bar — info, settings, reset icons */
+/* We simulate these via a pseudo-element since the JSX uses a <button> for reset */
+/* The reset button gets repositioned to look like the top-center refresh icon */
+.rbtn {
+  display: block;
+  position: fixed;
+  top: 18px;
+  left: 47%;
+  transform: translateX(30px);
+  /* offset to sit right of center icons */
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: none;
+  background: transparent;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 300;
+  cursor: pointer;
+  padding: 0;
+  opacity: 0.85;
+  transition: opacity 0.2s;
+}
+
+.rbtn:hover {
+  opacity: 1;
+}
+
+/* br tag cleanup */
+br {
+  display: none;
+}
