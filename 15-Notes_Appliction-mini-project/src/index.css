@@ -1,0 +1,9 @@
+@import "tailwindcss";
+.del2::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for Firefox */
+.del2 {
+  scrollbar-width: none;
+}
